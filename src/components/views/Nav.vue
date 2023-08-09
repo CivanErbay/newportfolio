@@ -6,18 +6,14 @@ const currNav = ref("");
 </script>
 
 <template>
-  <nav
-    :class="{ relative: !currNav.length }"
-    class="transition-all duration-500"
-  >
+  <nav>
     <NavElement
       @click="
         () => {
           currNav = 'projects';
         }
       "
-      :class="{ absolute: currNav.length }"
-      :styles="'ml-2'"
+      :styles="'ml-2 '"
       :is-small="currNav != 'projects' && currNav.length"
       >PROJEKTE</NavElement
     >
@@ -28,7 +24,6 @@ const currNav = ref("");
           currNav = 'techstack';
         }
       "
-      :class="{ 'absolute top-0 left-[25%]': currNav.length }"
       :styles="'ml-[25%]'"
       :is-small="currNav != 'techstack' && currNav.length"
       >TECHSTACK</NavElement
@@ -40,7 +35,6 @@ const currNav = ref("");
           currNav = 'contact';
         }
       "
-      :class="{ 'absolute top-0 left-[50%]': currNav.length }"
       :styles="'ml-[51%]'"
       :is-small="currNav != 'contact' && currNav.length"
       >KONTAKT</NavElement

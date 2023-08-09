@@ -2,11 +2,11 @@
   <div class="cursor-pointer">
     <div
       :class="styles"
-      class="font-code-latin w-fit text-3xl md:text-5xl lg:text-6xl pt-6"
+      class="w-fit text-2xl md:text-3xl lg:text-4xl"
     >
       <a
-        class="group text-sky-200 transition duration-300"
-        :class="{ 'text-xl': isSmall }"
+        class="group text-sky-200 transition-all duration-1000"
+        :class="{ 'text-xl md:text-2xl lg:text-3xl transition-all': isSmall }"
         ><slot></slot>
         <span
           class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-2 bg-sky-200"
