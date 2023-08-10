@@ -2,6 +2,7 @@
 import Nav from "@/components/views/Nav.vue";
 import SelfDesc from "@/components/views/SelfDesc.vue";
 import ImpressumBox from "@/components/views/ImpressumBox.vue";
+import Projects from "@/components/views/Projects.vue";
 </script>
 
 <template>
@@ -12,7 +13,9 @@ import ImpressumBox from "@/components/views/ImpressumBox.vue";
       <SelfDesc />
     </header>
 
-    <main></main>
+    <main>
+      <Projects />
+    </main>
     <footer class="mt-auto"><ImpressumBox /></footer>
   </div>
 </template>
