@@ -14,7 +14,9 @@ import Projects from "@/components/views/Projects.vue";
     </header>
 
     <main>
-      <Projects />
+      <div class="flex flex-wrap max-w-6xl pt-12 ml-12">
+        <Projects />
+      </div>
     </main>
     <footer class="mt-auto"><ImpressumBox /></footer>
   </div>
