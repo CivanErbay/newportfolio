@@ -1,30 +1,41 @@
 <template>
-  <div v-for="project in pastProjects" class="max-w-xl px-4">
-    <div class="-mx-4">
-      <div class="px-4">
-        <div class="p-4">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h2 class="text-2xl text-white font-semibold mb-3">
-              {{ project.title }}
-            </h2>
-            <p class="text-gray-400 mb-8">
-              {{ project.description }}
-            </p>
-            <span class="text-gray-400 mb-2">
-              {{ project.stack }}
-            </span>
+  <div
+    class="flex flex-wrap max-w-6xl max-h-[60vh] mt-6 pt-12 md:ml-12 overflow-y-scroll rounded-lg"
+  >
+    <div v-for="project in pastProjects" class="max-w-sm md:max-w-xl px-4">
+      <div class="-mx-4">
+        <div class="px-4">
+          <div class="p-4">
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h2 class="text-2xl text-white font-semibold mb-3">
+                {{ project.title }}
+              </h2>
+              <p class="text-gray-400 mb-8">
+                {{ project.description }}
+              </p>
+              <a
+                :href="project.link"
+                target="_blank"
+                class="text-sky-200 mr-2 md:block"
+                >{{ project.linkText }}</a
+              >
+              <br />
+              <span class="text-gray-400 mb-2">
+                {{ project.stack }}
+              </span>
 
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <span class="text-gray-400 mr-2">{{ project.company }}</span>
-                <a
-                  :href="project.link"
-                  target="_blank"
-                  class="text-gray-400 mr-2"
-                  >{{ project.link }}</a
-                >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <span class="text-gray-400 mr-2">{{ project.company }}</span>
+                  <a
+                    :href="project.link"
+                    target="_blank"
+                    class="text-gray-400 mr-2 hidden md:block"
+                    >{{ project.link }}</a
+                  >
+                </div>
+                <span class="text-gray-400 mr-2">{{ project.date }}</span>
               </div>
-              <span class="text-gray-400 mr-2">{{ project.date }}</span>
             </div>
           </div>
         </div>
@@ -44,6 +55,7 @@ const pastProjects = [
     company: "denkwerk",
     stack: "Angular",
     date: "2023",
+    linkText: "meine-swm.de",
   },
   {
     title: "Zugvögel Festival - Personalplaner ",
@@ -54,6 +66,7 @@ const pastProjects = [
     company: "privat",
     stack: "VueJs, Express",
     date: "2023",
+    linkText: "Schwarmplaner",
   },
   {
     title: "Kappes Kimchi - Webshop",
@@ -64,6 +77,7 @@ const pastProjects = [
     company: "privat",
     stack: "VueJs, Firebase, GCP",
     date: "2022",
+    linkText: "Kappes Kimchi",
   },
   {
     title: "Stadtwerke München - Website",
@@ -74,6 +88,7 @@ const pastProjects = [
     company: "denkwerk",
     stack: "VueJs,Nunjucks",
     date: "2022",
+    linkText: "smw.de",
   },
   {
     title: "Deka Investments",
@@ -84,6 +99,7 @@ const pastProjects = [
     stack: "VueJs,Nunjucks",
     company: "denkwerk",
     date: "2021",
+    linkText: "deka.de",
   },
 ];
 </script>

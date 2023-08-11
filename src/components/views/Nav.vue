@@ -2,7 +2,9 @@
 import { ref } from "vue";
 import NavElement from "@/components/reusable/NavElement.vue";
 
-const currNav = ref("");
+const emits = defineEmits(["nav-selected"]);
+
+const currNav = ref("projects");
 </script>
 
 <template>
@@ -11,6 +13,7 @@ const currNav = ref("");
       @click="
         () => {
           currNav = 'projects';
+          emits('nav-selected', currNav);
         }
       "
       :styles="'ml-2 '"
@@ -22,6 +25,7 @@ const currNav = ref("");
       @click="
         () => {
           currNav = 'techstack';
+          emits('nav-selected', currNav);
         }
       "
       :styles="'ml-[25%]'"
@@ -33,6 +37,7 @@ const currNav = ref("");
       @click="
         () => {
           currNav = 'contact';
+          emits('nav-selected', currNav);
         }
       "
       :styles="'ml-[51%]'"
