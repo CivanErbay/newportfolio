@@ -16,7 +16,7 @@ const currNav = ref("projects");
           emits('nav-selected', currNav);
         }
       "
-      :styles="'ml-2 '"
+      :styles="'md:ml-2'"
       :is-small="currNav != 'projects' && currNav.length"
       >PROJEKTE</NavElement
     >
@@ -28,7 +28,7 @@ const currNav = ref("projects");
           emits('nav-selected', currNav);
         }
       "
-      :styles="'ml-[25%]'"
+      :styles="'ml-[23%]'"
       :is-small="currNav != 'techstack' && currNav.length"
       >TECHSTACK</NavElement
     >

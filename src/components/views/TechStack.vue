@@ -14,12 +14,11 @@
         <li class="mb-2">Mehrjährige Agenturerfahrung</li>
         <li class="mb-2">
           Zuverlässige Umsetzung von Webseiten, komplexen Webanwendungen und
-          digitale Lösungen, die sowohl funktional als auch ästhetisch
+          digitalen Lösungen, die sowohl funktional als auch ästhetisch
           ansprechend sind
         </li>
         <li class="mb-2">
-          Bandbreite an Technologien, darunter HTML5, CSS3 und gängige
-          JavaScript- & UI-Frameworks
+          Einsatz aller gängigen JavaScript- & UI-Frameworks
         </li>
         <li class="mb-2">
           Kundenorientierte & agile Arbeitsweise, sowie ein gutes Verständnis
