@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import NavElement from "@/components/reusable/NavElement.vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
 
-const emits = defineEmits(["nav-selected"]);
+import NavElement from "@/components/reusable/NavElement.vue";
 
 const currNav = ref("projects");
 </script>
@@ -13,7 +14,7 @@ const currNav = ref("projects");
       @click="
         () => {
           currNav = 'projects';
-          emits('nav-selected', currNav);
+          router.push('/projects');
         }
       "
       :styles="'md:ml-2'"
@@ -25,7 +26,7 @@ const currNav = ref("projects");
       @click="
         () => {
           currNav = 'techstack';
-          emits('nav-selected', currNav);
+          router.push('/techstack');
         }
       "
       :styles="'ml-[23%]'"
@@ -37,7 +38,7 @@ const currNav = ref("projects");
       @click="
         () => {
           currNav = 'contact';
-          emits('nav-selected', currNav);
+          router.push('/contact');
         }
       "
       :styles="'ml-[51%]'"
