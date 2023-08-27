@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl max-h-[60vh] mt-6 pt-12 md:ml-20">
+  <div class="max-w-6xl max-h-[60vh] mt-6 pt-12 md:ml-20 overflow-y-scroll">
     <div class="flex flex-wrap gap-10 max-w-lg">
       <img
         v-for="icon in iconPathList"
@@ -9,7 +9,7 @@
         height="60"
       />
     </div>
-    <div class="mt-12 text-xl">
+    <div class="mt-12 pr-4 text-xl">
       <ul>
         <li class="mb-2">Mehrjährige Agenturerfahrung</li>
         <li class="mb-2">
