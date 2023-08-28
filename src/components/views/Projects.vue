@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-wrap max-w-6xl max-h-[60vh] mt-6 md:pt-12 md:ml-12 overflow-y-scroll rounded-lg"
+    class="flex flex-wrap max-w-6xl max-h-[55vh] md:max-h-[60vh] mt-6 md:pt-12 md:ml-12 overflow-y-scroll rounded-lg text-sm md:text-base"
   >
     <div v-for="project in pastProjects" class="max-w-sm md:max-w-xl px-4">
       <div class="-mx-4">
@@ -10,7 +10,7 @@
               class="bg-gray-800 p-6 rounded-lg md:h-[426px] flex flex-col justify-between"
             >
               <div>
-                <h2 class="text-2xl text-white font-semibold mb-3">
+                <h2 class="text-xl md:text-2xl text-white font-semibold mb-3">
                   {{ project.title }}
                 </h2>
                 <p class="text-gray-400 mb-8">

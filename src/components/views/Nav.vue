@@ -31,7 +31,7 @@ const currNav = ref("projects");
       "
       :styles="'ml-[23%]'"
       :is-small="currNav != 'techstack' && currNav.length"
-      >TECHSTACK</NavElement
+      >STACK</NavElement
     >
 
     <NavElement

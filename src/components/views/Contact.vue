@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mt-6 pt-12 md:ml-20">
+  <div class="max-w-6xl max-h-[55vh] md:max-h-[65vh] mt-6 pt-4 md:pt-12 md:ml-20">
     <h5>
       Sie können mich per Kontaktformular kontaktieren oder direkt anrufen:
     </h5>

@@ -10,7 +10,7 @@ import { ref } from "vue";
   <div
     class="app max-w-screen-2xl m-auto font-code-latin text-sky-200 px-4 md:px-8 lg:px-12"
   >
-    <header class="flex justify-between pt-9 md:items-center">
+    <header class="flex justify-between pt-3 md:pt-9 md:items-center">
       <Nav />
       <SelfDesc />
     </header>
