@@ -39,16 +39,16 @@
 
 <script setup>
 const iconPathList = [
-  { path: "src/assets/icons/Vuejs.png", alt: "vuejs" },
-  { path: "src/assets/icons/React.png", alt: "react" },
-  { path: "src/assets/icons/Angular.png", alt: "angular" },
-  { path: "src/assets/icons/Node.png", alt: "node" },
-  { path: "src/assets/icons/Html5.png", alt: "html" },
-  { path: "src/assets/icons/Css3.png", alt: "css3" },
-  { path: "src/assets/icons/Gcp.png", alt: "google cloud" },
-  { path: "src/assets/icons/Firebase.png", alt: "firebase" },
-  { path: "src/assets/icons/Atlassian.png", alt: "atlassian" },
-  { path: "src/assets/icons/Git.png", alt: "git" },
+  { path: "./src/assets/icons/Vuejs.png", alt: "vuejs" },
+  { path: "./src/assets/icons/React.png", alt: "react" },
+  { path: "./src/assets/icons/Angular.png", alt: "angular" },
+  { path: "./src/assets/icons/Node.png", alt: "node" },
+  { path: "./src/assets/icons/Html5.png", alt: "html" },
+  { path: "./src/assets/icons/Css3.png", alt: "css3" },
+  { path: "./src/assets/icons/Gcp.png", alt: "google cloud" },
+  { path: "./src/assets/icons/Firebase.png", alt: "firebase" },
+  { path: "./src/assets/icons/Atlassian.png", alt: "atlassian" },
+  { path: "./src/assets/icons/Git.png", alt: "git" },
 ];
 </script>
 
