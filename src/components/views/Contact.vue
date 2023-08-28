@@ -35,7 +35,7 @@
         ></span>
       </button>
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://civan.io/" />
+      <input type="hidden" name="_next" value="https://civan-erbay.de/" />
     </form>
   </div>
 </template>
