@@ -13,13 +13,24 @@ const currNav = ref("projects");
     <NavElement
       @click="
         () => {
+          currNav = 'whoami';
+          router.push('/whoami');
+        }
+      "
+      :styles="'md:ml-2'"
+      :is-small="currNav != 'whoami' && currNav.length"
+      >whoami</NavElement
+    >
+    <NavElement
+      @click="
+        () => {
           currNav = 'projects';
           router.push('/projects');
         }
       "
       :styles="'md:ml-2'"
       :is-small="currNav != 'projects' && currNav.length"
-      >PROJEKTE</NavElement
+      >projekte</NavElement
     >
 
     <NavElement
@@ -31,7 +42,7 @@ const currNav = ref("projects");
       "
       :styles="'ml-[23%]'"
       :is-small="currNav != 'techstack' && currNav.length"
-      >STACK</NavElement
+      >techstack</NavElement
     >
 
     <NavElement
@@ -43,7 +54,7 @@ const currNav = ref("projects");
       "
       :styles="'ml-[51%]'"
       :is-small="currNav != 'contact' && currNav.length"
-      >KONTAKT</NavElement
+      >kontakt</NavElement
     >
   </nav>
 </template>

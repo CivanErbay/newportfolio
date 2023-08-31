@@ -5,7 +5,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("../views/Projects.vue"),
+      component: () => import("../views/WhoAmI.vue"),
+    },
+    {
+      path: "/whoami",
+      component: () => import("../views/WhoAmI.vue"),
     },
     {
       path: "/projects",
@@ -17,6 +21,10 @@ const router = createRouter({
     },
     {
       path: "/contact",
+      component: () => import("../views/Contact.vue"),
+    },
+    {
+      path: "/mailsuccess",
       component: () => import("../views/Contact.vue"),
     },
     {

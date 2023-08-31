@@ -12,7 +12,7 @@ import { ref } from "vue";
   >
     <header class="flex justify-between pt-3 md:pt-9 md:items-center">
       <Nav />
-      <SelfDesc />
+      <!-- <SelfDesc /> -->
     </header>
 
     <main>
